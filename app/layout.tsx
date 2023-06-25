@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import NhostWrapper from "./components/nhost-wrapper";
 
 export const metadata = {
   title: "NextJS-Nhost",
@@ -12,7 +13,9 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NhostWrapper>{children}</NhostWrapper>
+      </body>
     </html>
   );
 }
